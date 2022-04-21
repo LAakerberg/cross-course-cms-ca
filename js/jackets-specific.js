@@ -6,8 +6,7 @@ const contentJacket = document.querySelector(".jacket-list");
 const loadingBar = document.querySelector(".load");
 
 const url =
-  "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/store/v1/products?id=" +
-  id;
+  "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/store/v1/products/" + id;
 
 loadingBar.innerHTML += `<div class="loading"><p class="loading-text">Loading...</p><div class="loader"></div></div>`;
 contentJacket.innerHTML = ``;
@@ -16,13 +15,13 @@ async function getProducts() {
   try {
     const response = await fetch(url);
     const getResults = await response.json();
-    const product = getResults;
     console.log(getResults);
-    for (let i = 0; i < product.length; i++) {
-      loadingBar.innerHTML = ``;
-      contentJacket.innerHTML += `
+    const product = getResults;
+
+    loadingBar.innerHTML = ``;
+    contentJacket.innerHTML += `
     <div class="product-large">
-    <img src="${product.images[i].src}" alt="${product.name}" class="products__image__large" />
+    <img src="${product.images[0].src}" alt="${product.name}" class="products__image__large" />
     <a href="jackets.html" class="back-button"><span class="material-icons">arrow_back</span></a>
     <div class="products__image_thumb"></div>
     <div class="price-cta">
@@ -38,7 +37,6 @@ async function getProducts() {
   <p>${product.description}</p>
   </div></a></div>
     `;
-    }
   } catch (error) {
     console.log(error);
   }
