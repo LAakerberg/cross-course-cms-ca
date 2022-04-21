@@ -213,6 +213,8 @@ a {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   justify-items: center;
+  max-width: 1300px;
+  margin: 0px auto;
 }
 
 /* Menu */
