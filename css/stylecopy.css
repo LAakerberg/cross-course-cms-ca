@@ -1,0 +1,15 @@
+body {
+  background-color: aqua;
+  min-height: 100vh;
+  margin: 0px auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+main,
+footer {
+  background: white;
+  max-width: 2000px;
+  border: 1px solid purple;
+}

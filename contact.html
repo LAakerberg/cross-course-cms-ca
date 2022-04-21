@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b318972c4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rainydays | Contact us</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-background">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jackets.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="activenav">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-background">
+        <a href="index.html"
+          ><img
+            src="images/RainyDays_Logoheader-copy.png"
+            alt="Our logo for Rainydays"
+            class="logo"
+        /></a>
+        <div class="top-menu">
+          <a href=".."
+            ><span class="material-icons md-36">account_circle</span></a
+          >
+          <a href=".."><span class="material-icons md-36">search</span></a>
+          <a href=".."><span class="material-icons md-36">room</span></a>
+          <a href="carter.html"
+            ><span class="material-icons md-36">shopping_cart</span></a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-content-contact">
+        <div class="continer">
+          <div class="one text">
+            <p>
+              Before you call us, make sure you have your customer number or
+              order number available.
+            </p>
+            <p>
+              You can also contact us through our contact form here on this
+              site.
+            </p>
+
+            <p>
+              Enter your information here on the right side and choose an
+              related category that's match your request.
+            </p>
+          </div>
+          <div class="one">
+            <form action="contact-success.html" method="GET">
+              <fieldset>
+                <legend>Your personal information</legend>
+                <label for="name">Your name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Example: Adam Sandler"
+                  class="form-input"
+                  required
+                />
+                <label for="phone">Your phonenumber</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Example: +47 123 45 678"
+                  class="form-input"
+                  required
+                />
+                <label for="email">Your email adress</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="name@youremail.com"
+                  class="form-input"
+                  required
+                />
+              </fieldset>
+              <fieldset>
+                <legend>Details</legend>
+                <label for="ordernumber">Your order number</label>
+                <input
+                  type="text"
+                  name="ordernumber"
+                  id="ordernumber"
+                  placeholder="125-678-02"
+                  class="form-input"
+                  required
+                />
+                <select name="subject" class="form-input" required>
+                  <option value="subject-jacket">Jacket</option>
+                  <option value="subject-shipment">Shipment</option>
+                  <option value="subject-return">Return product</option>
+                </select>
+                <section>
+                  <label for="message">Enter you message</label>
+                  <textarea id="message" class="form-input" required></textarea>
+                </section>
+                <input type="submit" value="Send" class="cta" />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-links">
+      <div class="footer-links__content">
+        <h3>Corporate info</h3>
+        <a href="index.html">
+          <p>Career at Rainydays</p>
+        </a>
+        <a href="index.html">
+          <p>About us</p>
+        </a>
+        <a href="index.html">
+          <p>Press</p>
+        </a>
+      </div>
+      <div class="footer-links__content">
+        <h3>Help</h3>
+        <a href="index.html">
+          <p>Customer service</p>
+        </a>
+        <a href="index.html">
+          <p>My account</p>
+        </a>
+        <a href="index.html">
+          <p>Find a store</p>
+        </a>
+      </div>
+      <div class="footer-links__content">
+        <h3>Shop</h3>
+        <a href="index.html">
+          <p>Women jackets</p>
+        </a>
+        <a href="index.html">
+          <p>Men jackets</p>
+        </a>
+        <a href="index.html">
+          <p>Jackets on sale</p>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

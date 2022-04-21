@@ -1,0 +1,145 @@
+.main-content.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.checkout-road {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: auto;
+}
+
+.order-road p {
+  padding: 5px;
+  font-style: italic;
+  font-size: 1.2em;
+  color: black;
+}
+
+.order-active {
+  text-decoration: underline;
+  color: #000;
+}
+
+.order-inactive {
+  color: rgb(143, 143, 143);
+}
+
+.order-passed {
+  text-decoration: line-through;
+  color: red;
+}
+
+.checkout-form {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.checkout-form input {
+  display: block;
+  width: 350px;
+  padding: 8px;
+  margin: 10px 0px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+input[name="securenumb"] {
+  width: 120px;
+}
+
+input[name="valid"] {
+  width: 200px;
+}
+
+.carter {
+  flex: 1;
+  margin: auto;
+  padding: 5px;
+}
+
+.carter-out {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  border-top: dashed;
+  border-bottom: dashed;
+}
+
+.text {
+  padding: 20px;
+}
+
+.out {
+  flex: auto;
+  margin: auto;
+}
+
+.price {
+  min-width: 50%;
+}
+
+.price h1 {
+  border-bottom: dashed;
+  float: right;
+  color: #000;
+}
+
+.one {
+  flex: 1;
+}
+
+.two {
+  flex: 3;
+}
+
+.three {
+  flex: 1;
+}
+
+.products__image {
+  max-height: 100px;
+  padding: 5px 0px;
+}
+
+.buy {
+  padding: 50px 0px;
+  min-width: 50%;
+}
+
+.buy a {
+  float: right;
+  margin: 10px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+  color: firebrick;
+}
+
+.material-icons.shopping_bag {
+  font-size: 62px;
+  padding: 50px;
+  background-color: rgb(209, 209, 209);
+  border-radius: 30%;
+}
+
+.success {
+  color: green;
+  margin: auto;
+}
+
+.material-icons.mail {
+  font-size: 62px;
+  padding: 50px;
+  background-color: rgb(209, 209, 209);
+  border-radius: 30%;
+}

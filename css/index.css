@@ -1,0 +1,171 @@
+/* Index main content */
+
+.campaign-left {
+  flex: 1;
+  text-align: right;
+  position: relative;
+}
+
+.campaign-right {
+  flex: 1;
+  text-align: left;
+  position: relative;
+  margin: 0px auto;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.campaign {
+  flex: 1;
+  text-align: center;
+}
+
+.mainbody {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid blue;
+  max-width: 1800px;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.adventure__image,
+.jackets__image {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 550px;
+  border: 1px solid black;
+}
+
+.jackets__image {
+  border-radius: 30px 0px 0px 5px;
+}
+
+.adventure__image {
+  border-radius: 0px 5px 30px 0px;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  background-color: rgba(227, 190, 136, 0.8);
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  border-style: solid;
+  border-width: 1px;
+  transition-duration: 0.4s;
+}
+
+.top-text {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  background-color: rgba(227, 190, 136, 0.8);
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 15px 10px 15px;
+  border-style: solid;
+  border-width: 1px;
+  transition-duration: 0.4s;
+}
+
+.top-text:hover,
+.bottom-text:hover {
+  transition-duration: 0.4s;
+  font-size: 1.3em;
+  background-color: rgba(227, 190, 136, 1);
+}
+
+main a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #000;
+  display: inline-block;
+}
+
+/* Index main weekly discount */
+
+.weekly {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.discount h1 {
+  padding-left: 14px;
+  background-color: rgba(227, 190, 136, 0.8);
+  border-radius: 8px;
+  padding: 10px 15px 10px 15px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.product {
+  background-color: #fff;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  max-width: 160px;
+}
+
+.video {
+  position: relative;
+}
+
+.video2 {
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* become a member content */
+
+.become-member {
+  background-image: url(/images/daniel-frank-R5CpX0Ktrzs-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 45%;
+  min-height: 400px;
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.become-member .bottom-text {
+  position: absolute;
+  bottom: 35px;
+  left: 30px;
+  padding: 8px 15px 8px 15px;
+}
+
+.become-member__image {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+}

@@ -1,0 +1,45 @@
+.about-main {
+  min-height: 100px;
+  margin: 0px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.welcome {
+  flex: 1;
+}
+
+.continer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.one {
+ flex: 1;
+}
+
+.one p {
+  padding: 10px;
+}
+
+.two {
+  flex: 1;
+  padding: 10px 0px 10px 15px;
+  margin: auto;
+}
+
+.about__img {
+  width: 80%;
+  margin: auto;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}

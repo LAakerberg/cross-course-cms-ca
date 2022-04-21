@@ -1,0 +1,66 @@
+.main-content-contact {
+  min-height: 100px;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+.continer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0px auto;
+}
+
+.one {
+  flex: 1;
+}
+
+.text {
+  padding: 10px 0px 0px 10px;
+}
+
+.text p {
+  padding: 10px;
+}
+
+.form-input {
+  display: block;
+  min-width: 80%;
+  padding: 8px;
+  border: 1px #000 solid;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+input {
+  padding: 5px;
+  background-color: #fff;
+}
+
+input[type="text"]:focus {
+  background-color: #7b94b4;
+}
+
+input[type="email"]:focus {
+  background-color: #7b94b4;
+}
+
+input[type="tel"]:focus {
+  background-color: #7b94b4;
+}
+
+input[type="submit"] {
+  border: none;
+}
+
+label {
+  padding: 10px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+option {
+  background-color: #fff;
+}

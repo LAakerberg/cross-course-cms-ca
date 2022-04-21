@@ -1,0 +1,256 @@
+/* Global CSS Code */
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF") format(Truetype);
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px auto;
+  color: #565939;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0px auto;
+  background-color: #fff;
+  font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.header-background {
+  min-height: 300px;
+  background-image: url("../images/austin-ban-juHayWuaaoQ-unsplash-2000.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 65%;
+  position: relative;
+  justify-content: right;
+}
+
+/* 
+header {
+  background-image: url("../images/austin-ban-juHayWuaaoQ-unsplash-900width-300height.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  min-height: 300px;
+  position: relative;
+  justify-content: right;
+}
+*/
+
+header .logo {
+  object-position: left top;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+header label {
+  padding: 8px 0px 0px 10px;
+  display: inline-block;
+}
+
+.logo {
+  max-width: 207px;
+  border-radius: 20px;
+}
+
+main {
+  background-color: #e6eaef;
+  padding: 10px;
+}
+
+footer {
+  background-color: #b4bfcc;
+  min-height: 100px;
+  width: 100%;
+  margin: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #565939;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  margin: 0px auto;
+}
+
+.footer-links__content,
+h3,
+p {
+  margin: 0px auto;
+  color: #565939;
+}
+
+.price {
+  color: #000;
+  padding-top: 5px;
+}
+
+.products__image {
+  width: 155px;
+  height: 210px;
+}
+
+/* Navigation menu */
+
+.nav-background {
+  background-image: linear-gradient(#7b94b4, #525e6e);
+  min-height: 40px;
+  padding: 0px;
+}
+
+nav {
+  font-size: 1.3em;
+  display: none;
+  position: fixed;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0px 10px 0px 10px;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(#525e6e, #7b94b4);
+}
+
+.activenav {
+  text-decoration: underline;
+  background-image: linear-gradient(#525e6e, #7b94b4);
+  border-inline: solid;
+  border-width: 3px;
+  border-color: #000;
+}
+
+nav ul {
+  margin: 0px auto;
+  text-align: center;
+  padding: 0px;
+  max-height: 31px;
+}
+nav li a {
+  display: block;
+  background-image: linear-gradient(#7b94b4, #525e6e);
+  padding-top: 5px;
+  min-height: 35px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+/* Links, buttons and cta */
+
+a {
+  text-decoration: none;
+}
+
+.cta {
+  background-image: linear-gradient(#7b94b4, #525e6e);
+  color: #fff;
+  font-size: 1.3em;
+  min-height: 30px;
+  border-radius: 30px;
+  padding: 8px 20px 8px 20px;
+}
+
+.cta:hover {
+  background-image: linear-gradient(#525e6e, #7b94b4);
+  text-decoration: underline;
+}
+
+.active {
+  background-image: linear-gradient(#010811, #000000);
+}
+
+/* Global main content */
+
+.weekly,
+.products {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+/* Menu */
+
+.top-menu {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 5px 15px 0px 15px;
+}
+
+.top-menu a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
+
+.top-menu a:hover {
+  text-decoration: none;
+  color: #d8dde4;
+}
+
+/* Google icon */
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+  padding: 0px;
+  margin: 0px 5px 0px 5px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.active-cart {
+  color: red;
+}

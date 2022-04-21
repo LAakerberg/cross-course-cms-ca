@@ -1,0 +1,145 @@
+/* Media queries - Responsive across screen sizes */
+
+@media screen and (min-width: 320px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .weekly,
+  .jacket-list {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 470px) {
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav a {
+    padding: 0px 5px 0px 5px;
+  }
+  nav li {
+    display: inline-block;
+  }
+
+  header label {
+    display: none;
+  }
+  .top-menu {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    padding: 5px 15px 5px 15px;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .top-menu a:hover {
+    text-decoration: none;
+    color: #525e6e;
+  }
+  .top-menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .add-to-cart-buy {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 480px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .main-content-bottom {
+    flex-direction: column;
+  }
+  .weekly {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    justify-items: center;
+  }
+  .continer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.content {
+  flex-direction: column;
+}
+
+@media (min-width: 501px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .main-content {
+    flex-direction: row;
+  }
+  .weekly {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    justify-items: center;
+  }
+  .menu {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 559px) {
+  .main-content,
+  .main-content-bottom {
+    flex-direction: row;
+  }
+  .weekly {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    justify-items: center;
+  }
+  .carter-out {
+    width: 50%;
+  }
+
+  @media (min-width: 620px) {
+    .main-content-jacket {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+    }
+  }
+
+  @media (min-width: 720px) {
+    .main-content,
+    .main-content-bottom {
+      flex-direction: row;
+    }
+    .weekly,
+    .jacket-list {
+      grid-template-columns: repeat(4, 1fr);
+      display: grid;
+      justify-items: center;
+    }
+  }
+
+  @media (min-width: 845px) {
+    .jacket-list {
+      grid-template-columns: repeat(6, 1fr);
+      display: grid;
+      justify-items: center;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .weekly {
+    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    justify-items: center;
+  }
+}
