@@ -1,3 +1,4 @@
+/*
 import products from "./data/products.js";
 
 const specificJacket = document.querySelector(".item");
@@ -33,3 +34,4 @@ specificJacket.innerHTML += `
 </div>`;
 
 console.log(id);
+*/
