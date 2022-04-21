@@ -2,11 +2,20 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const contentJacket = document.querySelector(".jacket-list");
+const contentJacket = document.querySelector(".specific");
 const loadingBar = document.querySelector(".load");
 
+/*
 const url =
   "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/store/v1/products/" + id;
+*/
+const link =
+  "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/v3/products/" + id;
+
+const key =
+  "?consumer_key=ck_b08e1b35330f9429c3dd3c0217524fc5f043f0a9&consumer_secret=cs_34ca13e5e0845f327dd9ee677ab696929a186125";
+
+const url = link + key;
 
 loadingBar.innerHTML += `<div class="loading"><p class="loading-text">Loading...</p><div class="loader"></div></div>`;
 contentJacket.innerHTML = ``;
@@ -26,7 +35,7 @@ async function getProducts() {
     <div class="products__image_thumb"></div>
     <div class="price-cta">
     <div class="add-to-cart">
-      <h2>${product.prices.regular_price},- NOK</h2>
+      <h2>${product.regular_price},- NOK</h2>
     </div>
     <div class="add-to-cart-buy">
       <div class="links"><a href="jackets-specific-cart.html" class="cta">Add to cart</a></div>
