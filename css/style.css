@@ -119,6 +119,7 @@ p {
 .price {
   color: #000;
   padding-top: 5px;
+  font-weight: bold;
 }
 
 .products__image {
@@ -137,7 +138,8 @@ p {
 nav {
   font-size: 1.3em;
   display: none;
-  position: fixed;
+  position: relative;
+  height: 100vh;
 }
 
 nav a {
@@ -147,7 +149,7 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   background-image: linear-gradient(#525e6e, #7b94b4);
 }
 
@@ -178,6 +180,7 @@ nav li a {
 
 #hamburger-menu:checked ~ nav {
   display: block;
+
 }
 
 /* Links, buttons and cta */
@@ -214,8 +217,9 @@ a {
   gap: 10px;
   justify-items: center;
   max-width: 1300px;
-  margin: 0px auto;
+  text-decoration: none;
 }
+
 
 /* Menu */
 

@@ -10,18 +10,21 @@ const link2 =
 // API call to unsecure and public site
 
 const key =
-  "?consumer_key=ck_b08e1b35330f9429c3dd3c0217524fc5f043f0a9&consumer_secret=cs_34ca13e5e0845f327dd9ee677ab696929a186125";
+  "consumer_key=ck_b08e1b35330f9429c3dd3c0217524fc5f043f0a9&consumer_secret=cs_34ca13e5e0845f327dd9ee677ab696929a186125";
+
+const keyCombine1 = "?";
+const keyCombine2 = "&";
+
 // Security key
 const url = link + key;
 // combine the link + key
 loadingBar.innerHTML += `<div class="loading"><p class="loading-text">Loading...</p><div class="loader"></div></div>`;
 contentJacket.innerHTML = ``;
 
-async function getProducts() {
+async function getProducts(url) {
   try {
     const response = await fetch(url);
-    const getResults = await response.json();
-    const products = getResults;
+    const products = await response.json();
     products.forEach(function (product) {
       loadingBar.innerHTML = ``;
       contentJacket.innerHTML += `
@@ -37,35 +40,31 @@ async function getProducts() {
       `;
     });
 
-    console.log(getResults);
+    console.log(products);
   } catch (error) {
     console.log(error);
   }
 }
 
-getProducts(link);
+getProducts(link + keyCombine1 + key);
 // call the function/API
 
-/*
 perPage.onchange = function (event) {
-  const newUrl = link + `per_page=${event.target.value}` + key;
-  loadingBar.innerHTML = ``;
+  const newUrl = link + `?per_page=${event.target.value}` + keyCombine2 + key;
   contentJacket.innerHTML = ``;
   getProducts(newUrl);
 };
-*/
 
 categoryCheck.forEach(function (category) {
   category.onclick = function (event) {
     let newUrl;
-    if (event.target.id === "popular") {
-      newUrl = link + "?featured=true";
-      contentJacket.innerHTML += ``;
+    if (event.target.id === "featured") {
+      newUrl = link + `?featured=true` + keyCombine2 + key;
     } else {
       const categorySpecific = event.target.value;
-      newUrl = link + `/categories/${categorySpecific}` + key;
+      newUrl = link + `?category=${categorySpecific}` + keyCombine2 + key;
+      contentJacket.innerHTML = ``;
+      getProducts(newUrl);
     }
-    contentJacket.innerHTML += ``;
-    getProducts(newUrl);
   };
 });

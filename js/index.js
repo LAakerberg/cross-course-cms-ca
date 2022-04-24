@@ -2,13 +2,14 @@ const contentOne = document.querySelector(".one");
 const contentTwo = document.querySelector(".two");
 const contentThree = document.querySelector(".three");
 
-const link = "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/v3/products";
+const link =
+  "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/v3/products?featured=true";
 // API call to secure site that's need key access
 const link2 =
   "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/store/products";
 // API call to unsecure and public site
 const key =
-  "?consumer_key=ck_b08e1b35330f9429c3dd3c0217524fc5f043f0a9&consumer_secret=cs_34ca13e5e0845f327dd9ee677ab696929a186125";
+  "&consumer_key=ck_b08e1b35330f9429c3dd3c0217524fc5f043f0a9&consumer_secret=cs_34ca13e5e0845f327dd9ee677ab696929a186125";
 // Security key
 const url = link + key;
 // combine the link + key
@@ -40,16 +41,21 @@ function createHTML(products) {
 
     if (featured === true) {
       contentTwo.innerHTML += `
+      <a class="link" href="jackets-specific.html?id=${product.id}">
       <div class="product">
       <img src="${product.images[0].src}" alt="${product.name}" class="products__image" />
       <div class="small-product-text">
       <h3>${product.name}</h3>
       <p>${product.attributes[0].name} - ${product.attributes[0].options}</p>
       <p class="price">${product.regular_price},- NOK</p>
-      </div></div>
+      </div></div></a>
       `;
     } else {
       console.log("Error");
+      contentTwo.innerHTML = `
+      <div class="error">
+      Could not load the most popular products, please try again later...
+      </div>`;
     }
   });
 }
