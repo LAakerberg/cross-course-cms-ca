@@ -54,32 +54,39 @@
     </header>
     <main>
       <div class="main-content">
-        <div class="item menu">
+        <div class="item menu category">
           <ul>
             <li class="top">
               <h2>Category</h2>
             </li>
             <li>
-              <a href="jackets.html" class="menu-style">Fleece jackets</a>
-            </li>
-            <li><a href="jackets.html" class="menu-style">Light jackets</a></li>
-            <li><a href="jackets.html" class="menu-style">Rain jackets</a></li>
-            <li>
-              <a href="jackets.html" class="menu-style">Summer jackets</a>
+              <label for="popular" class="button-style"><span>Popular jackets</span></label>
+              <input  class="category-menu" type="checkbox" name="category" id="popular" value="true">
             </li>
             <li>
-              <a href="jackets.html" class="menu-style">Winter jackets</a>
+              <label for="men" class="button-style"><span>Men jackets</span></label>
+              <input  class="category-menu" type="checkbox" name="category" id="men" value="16">
             </li>
             <li>
-              <a href="jackets.html" class="menu-style">Jackets on sale</a>
+              <label for="women" class="button-style"><span>Women jackets</span></label>
+              <input class="category-menu" type="checkbox" name="category" id="women" value="22">
             </li>
             <li class="bottom"></li>
           </ul>
+          <div class="per-page">
+              <label>Products per page</label>
+              <div>
+              <select class="per-page-selection">
+                <option value="3">Three</option>
+                <option value="6">Six</option>
+                <option value="All">All</option>
+              </select>
+            </div>
+          </div>
         </div>
         <div class="item jacket">
           <div class="load"></div>
-          <div class="item jacket-list">
-  
+            <div class="item jacket-list">
         </div>
       </div>
     </main>

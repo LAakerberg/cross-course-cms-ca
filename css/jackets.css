@@ -1,7 +1,8 @@
 /* Sidebar with menu */
 
 .item {
-  margin: auto;
+  margin: 0px auto;
+  text-align: center;
 }
 
 /* Main */
@@ -39,6 +40,38 @@
   min-height: 33px;
   background-color: #e3be88;
   text-align: center;
+}
+
+.button-style {
+  display: block;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 8px 5px 8px;
+  min-height: 30px;
+  background-color: #e3be88;
+  text-align: center;
+  border: none;
+  font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.button-style:hover{
+  background-color: #f5f4f4;
+  font-size: 1.3em;
+}
+
+.button-style:active{
+  background-color: #f5f4f4;
+  font-size: 1.3em;
+}
+
+.category-menu {
+  display: none;
+}
+
+.category-menu:checked ~ nav {
+  display: block;
 }
 
 .menu .bottom {
