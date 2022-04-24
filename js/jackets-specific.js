@@ -11,12 +11,13 @@ const url =
 */
 const link =
   "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/v3/products/" + id;
+// API call to secure site that's need key access + product id
 
 const key =
   "?consumer_key=ck_b08e1b35330f9429c3dd3c0217524fc5f043f0a9&consumer_secret=cs_34ca13e5e0845f327dd9ee677ab696929a186125";
-
+// Security key
 const url = link + key;
-
+// combine the link + key
 loadingBar.innerHTML += `<div class="loading"><p class="loading-text">Loading...</p><div class="loader"></div></div>`;
 contentJacket.innerHTML = ``;
 
@@ -48,6 +49,11 @@ async function getProducts() {
     `;
   } catch (error) {
     console.log(error);
+    loadingBar.innerHTML = ``;
+    contentJacket.innerHTML = `
+    <div class="error">
+    Could not load the specific-product as requested, please try again later...
+    </div>`;
   }
 }
 

@@ -5,8 +5,10 @@ const perPage = document.querySelector(".per-page");
 
 const link = "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/v3/products";
 // API call to secure site that's need key access
+/*
 const link2 =
   "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/store/products";
+*/
 // API call to unsecure and public site
 
 const key =
@@ -43,6 +45,10 @@ async function getProducts(url) {
     console.log(products);
   } catch (error) {
     console.log(error);
+    contentJacket.innerHTML = `
+    <div class="error">
+    Could not load the product page as requested, please try again later...
+    </div>`;
   }
 }
 
@@ -54,6 +60,7 @@ perPage.onchange = function (event) {
   contentJacket.innerHTML = ``;
   getProducts(newUrl);
 };
+// products per page
 
 categoryCheck.forEach(function (category) {
   category.onclick = function (event) {
@@ -63,8 +70,9 @@ categoryCheck.forEach(function (category) {
     } else {
       const categorySpecific = event.target.value;
       newUrl = link + `?category=${categorySpecific}` + keyCombine2 + key;
-      contentJacket.innerHTML = ``;
-      getProducts(newUrl);
     }
+    contentJacket.innerHTML = ``;
+    getProducts(newUrl);
   };
 });
+// prodructs sorted by categories and featured "popular"
