@@ -2,6 +2,7 @@ const contentJacket = document.querySelector(".jacket-list");
 const loadingBar = document.querySelector(".load");
 const categoryCheck = document.querySelectorAll(".category");
 const perPage = document.querySelector(".per-page");
+const sortedBy = document.querySelector(".sorted");
 
 const link = "https://onedesign.nu/cross-course-cms-ca/wp-json/wc/v3/products";
 // API call to secure site that's need key access
