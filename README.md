@@ -1,53 +1,28 @@
-# Your project title
+# Rainydays - Cross-course project
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![Rainydays-Desktop](https://user-images.githubusercontent.com/44141432/171494944-47f0651a-d683-4288-925b-13a32a0ccc47.png)
 
 A simple overview of the use/purpose of the project.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This was one of my first bigger project were we should design and build an website for Raindays.
+This is a site were you can find the newest and most trendys jackets on the market for hiking and outdoors activitys.
 
 You can add some bullet points if you'd like to:
 
-- List item 1
-- List item 2
-- List item 3
+- Jackets for women
+- Jackets for men
+- Trendy jackets for all use during hiking and outdoor activitys
 
 ## Built With
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- [HTML5](https://html.com/html5/)
+- CSS
+- [JavaScript](http://vanilla-js.com/)
 
-## Getting Started
-
-### Installing
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-1. Clone the repo:
-
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
-```
-
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
 
 ## Contributing
 
@@ -61,10 +36,11 @@ This is where you can leave your social links for people to contact you, such as
 
 [My LinkedIn page](www.linkedin.com)
 
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
 ## Acknowledgments
 
 This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+
+I want to thanks all the teachers and the students from Noroff (2021-August-full-time) for all support during this project
+
+
