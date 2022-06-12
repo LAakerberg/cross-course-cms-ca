@@ -1,46 +1,36 @@
 # Rainydays - Cross-course project
 
-![Rainydays-Desktop](https://user-images.githubusercontent.com/44141432/171494944-47f0651a-d683-4288-925b-13a32a0ccc47.png)
+## Rainydays 
 
-A simple overview of the use/purpose of the project.
+![Rainydays](https://user-images.githubusercontent.com/44141432/173125795-5f8d3d1f-c710-4621-823d-d68200d1bac9.jpg)
+
+Here is a screenshots from the desktop version.
 
 ## Description
 
-This was one of my first bigger project were we should design and build an website for Raindays.
-This is a site were you can find the newest and most trendys jackets on the market for hiking and outdoors activitys.
+This is was my first ever project during my studies at Noroff. This site was built only with HTML & CSS in the first version of the project but have been
+updated with some few JavaScrpt functions. This is site built for Raindays, here can you find you next hacking gear or just one of the newest jackets for
+outdoor activities. 
 
-You can add some bullet points if you'd like to:
-
-- Jackets for women
-- Jackets for men
-- Trendy jackets for all use during hiking and outdoor activitys
+The site containes:
+- Home page
+- Product page
+- Products specifics page
+- About page
+- Contact page
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [HTML5](https://html.com/html5/)
-- CSS
+- [HTML](https://html.com/)
+- [CSS](https://www.w3.org/)
 - [JavaScript](http://vanilla-js.com/)
 
 
-## Contributing
-
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
-
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+Visit my LinkedIn if you would like to take contact with me
 
-[My Twitter page](www.twitter.com)
+[My LinkedIn page](https://www.linkedin.com/in/linus-%C3%A5kerberg-4126891b1/)
 
-[My LinkedIn page](www.linkedin.com)
-
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
-
-I want to thanks all the teachers and the students from Noroff (2021-August-full-time) for all support during this project
-
+[My Portfolio page](https://magical-piroshki-3a7d3f.netlify.app/)
 
